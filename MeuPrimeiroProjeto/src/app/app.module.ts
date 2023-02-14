@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
+import { FormsModule } from '@angular/forms';     // <- Habilita as manipulações no HTML (Ex: *ngFor)
 
 
 import { appRoutes } from './rotas/app.routes'; // Deve vir primeiro
@@ -26,7 +27,8 @@ import { notFoundComponent } from './erro/notFound.component';
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    FormsModule
     ],
   providers: [],
   bootstrap: [AppComponent]
