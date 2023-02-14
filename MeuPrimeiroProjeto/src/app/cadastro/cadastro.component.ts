@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { ICurso } from '../classes/interface.curso';
+import { CursoService } from '../services/curso.service';
+
 
 @Component({
     moduleId: module.id,
@@ -17,19 +19,16 @@ import { ICurso } from '../classes/interface.curso';
 
 export class CadastroComponent {
     // Simulação: definindo apenas um objeto
+     public curso : ICurso = {
+         codigo: 10,
+         descricao: 'Node JS',
+         ch: 24
+    };
 
-// public curso : ICurso = {
-//     codigo: 10,
-//     descricao: 'Node JS',
-//     ch: 24
-// };
-
-//      ARRAY
-public listaCadastro : ICurso[] = [
-    {codigo: 16, descricao:'Algoritmos', ch:15},
-    {codigo: 14, descricao:'Lógica de Programação', ch:15},
-    {codigo: 15, descricao:'Desenvolvimento Angular 4', ch:15}
-]
-
+    // Utilizando o SERVIÇO DE INJEÇÃO no componente
+    public listaCursos : ICurso[];
+    constructor(cursosService : CursoService){
+         this.listaCursos = cursosService.getListaCurso();
+    }
 
 }
