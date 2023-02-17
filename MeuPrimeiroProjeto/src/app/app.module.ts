@@ -15,6 +15,7 @@ import { LogoComponent } from './logo/logo.component';
 import { ListaComponent } from './lista/lista.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
 import { notFoundComponent } from './erro/notFound.component';
+import { MasterDetailComponent } from './masterdetail/masterdetail.component';
 
 //      SERVICES  
 import { CursoService } from './services/curso.service';
@@ -26,7 +27,8 @@ import { CursoService } from './services/curso.service';
     LogoComponent,
     ListaComponent,
     CadastroComponent,
-    notFoundComponent
+    notFoundComponent,
+    MasterDetailComponent
   ],
   imports: [
     BrowserModule,

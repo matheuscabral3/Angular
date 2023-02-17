@@ -8,4 +8,9 @@ import { Component } from '@angular/core';
     templateUrl: 'views/menu.component.html'
 })
 //  EXPORTAR O MenuComponent para outro Módulo.
-export class MenuComponent { }
+export class MenuComponent {
+    titulo_escola : string = "Impacta Treinamentos";
+    titulo_cad : string = "Cadastro de Cursos";
+    titulo_lista : string = "Listagem de Cursos";
+    titulo_masterdetail : string = "Master / Detail";
+ }

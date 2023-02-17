@@ -9,15 +9,15 @@
         <!-- Campos de Texto -->
         <div class="form-group">
             <label for="codigo">Código:</label>
-            <input type="text" class="form-control" id="txtCodigo" name="txtCodigo">
+            <input type="text" [(ngModel)]="curso.codigo" class="form-control" id="txtCodigo" name="txtCodigo">
         </div>
         <div class="form-group">
             <label for="codigo">Descrição:</label>
-            <input type="text" class="form-control" id="txtDescricao" name="txtDescricao">
+            <input type="text"[(ngModel)]="curso.descricao" class="form-control" id="txtDescricao" name="txtDescricao">
         </div>
         <div class="form-group">
             <label for="codigo">Carga Horária:</label>
-            <input type="text" class="form-control" id="txtCH" name="txtCH">
+            <input type="text"[(ngModel)]="curso.ch" class="form-control" id="txtCH" name="txtCH">
         </div>
 
          <!-- Botões -->
