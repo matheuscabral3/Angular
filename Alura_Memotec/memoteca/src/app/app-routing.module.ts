@@ -1,17 +1,18 @@
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { ListarPensamentoComponent } from './componentes/pensamentos/listar-pensamento/listar-pensamento.component';
 import { CriarPensamentoComponent } from './componentes/pensamentos/criar-pensamento/criar-pensamento.component';
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
 
 
 const routes: Routes = [
 
-// {
-//   path: '',
-//   redirectTo: 'home',
-//   pathMatch: 'full'
-// },
+  //  ARRAY DE ROTAS DISPONIVEIS
+{
+  path: '',
+  redirectTo: 'listarPensamento',
+  pathMatch: 'full'
+},
 {
   path: 'criarPensamento',
   component: CriarPensamentoComponent
@@ -19,6 +20,10 @@ const routes: Routes = [
 {
   path: 'listarPensamento',
   component: ListarPensamentoComponent
+},
+{
+  path: 'home',
+  component: HomeComponent
 }
 
 
